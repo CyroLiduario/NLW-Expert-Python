@@ -1,6 +1,10 @@
 from src.views.http_types.http_response import HttpResponse
 from .error_types.http_unprocessable_entity import HttpUnprocessableEntityError
 
+'''
+    Processa exceções/erros e retorna uma resposta HTTP apropriada e formatada ao usuário
+'''
+
 def handle_errors(error: Exception) -> HttpResponse:
     if isinstance(error, HttpUnprocessableEntityError):
         return HttpResponse(

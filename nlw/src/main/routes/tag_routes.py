@@ -6,6 +6,12 @@ from src.validators.tag_creator_validator import tag_creator_validator
 
 tags_routes_bp = Blueprint('tags_routes', __name__)
 
+'''
+    criação de rotas baseada em FLASK utilitando o método de blueprint
+    
+    Blueprint: Classe utilizada para organizar e modularizar a aplicação Flask. 
+    Permite que você agrupe rotas relacionadas e depois as registre na aplicação principal.
+'''
 @tags_routes_bp.route('/create_tag', methods=["POST"])
 def create_tags():
     response = None

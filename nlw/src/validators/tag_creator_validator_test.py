@@ -1,6 +1,9 @@
 from src.errors.error_types.http_unprocessable_entity import HttpUnprocessableEntityError
 from .tag_creator_validator import tag_creator_validator
 
+'''
+    Faz os testes do tag_creator_validator utilizando MockRequests
+'''
 class MockRequest:
     def __init__(self, json) -> None:
         self.json = json

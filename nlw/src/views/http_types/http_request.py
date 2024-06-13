@@ -1,5 +1,9 @@
 from typing import Dict
 
+'''
+    Define a classe HttpRequest que irá representar as requisições HTTP da aplicação
+'''
+
 class HttpRequest:
     def __init__(
             self,
