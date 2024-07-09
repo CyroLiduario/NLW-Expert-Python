@@ -10,7 +10,7 @@ class BarcodeHandler:
             O caminho onde a imagem foi salva é retornado.
         '''
         tag = Code128(product_code, writer=ImageWriter())
-        path_from_tag = f'barcodes/{tag}'
+        path_from_tag = f'nlw/barcodes/{tag}'
         tag.save(path_from_tag)
 
         return path_from_tag
